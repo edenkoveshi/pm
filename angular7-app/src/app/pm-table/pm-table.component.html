@@ -1,0 +1,15 @@
+<app-select (domainChangeEvent) ="filterByDomain($event)"></app-select>
+<table>
+  <tr>
+    <th *ngFor="let prop of keys">
+      {{prop}}
+    </th>
+  </tr>
+  <tr *ngFor="let server of servers">
+    <td *ngFor="let prop of keys" [ngStyle]="{'color':prop=='RebootPerformed'
+    && server['PMDeployed']==true ? (server[prop]==false ? 'red' : 'green') : ''}">
+      <!--<span contenteditable="true" (keyup)="changeValue(id, 'name', $event)" (blur)="updateList(id, 'name', $event)"></span>-->
+      {{server[prop]}}
+    </td>
+  </tr>
+</table>
