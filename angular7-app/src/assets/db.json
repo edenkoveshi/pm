@@ -1,50 +1,2738 @@
 {
-  "servers": [
-    {
-      "Name": "ServerA",
-      "OS": "Windows Sever 2019",
-      "App": "AppA",
-      "PMDeployed": true,
-      "RebootPerformed": false,
-      "PlannedRebootTime": "26-4-2020",
-      "Domain": "Domain1"
-    },
-    {
-      "Name": "ServerB",
-      "OS": "Windows Sever 2016",
-      "App": "AppB",
-      "PMDeployed": true,
-      "RebootPerformed": false,
-      "PlannedRebootTime": "28-4-2020",
-      "Domain": "Domain2"
-    },
-    {
-      "Name": "ServerC",
-      "OS": "Linux",
-      "App": "AppC",
-      "PMDeployed": true,
-      "RebootPerformed": true,
-      "PlannedRebootTime": "23-4-2020",
-      "Domain": "Domain2"
-    },
-    {
-      "Name": "ServerD",
-      "OS": "Windows Server 2012 R2",
-      "App": "AppA",
-      "PMDeployed": false,
-      "RebootPerformed": false,
-      "PlannedRebootTime": "",
-      "Domain": "Domain1"
-    }
-  ],
-  "apps": [
-    "AppA",
-    "AppB",
-    "AppC"
-  ],
-  "domains": [
-    "Domain1",
-    "Domain2",
-    "Domain3"
-  ]
+  "Servers": [
+                  {
+                      "Name":  "rLCfHxN",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "rbOlQWK",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "MApQPKC",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "vHfBnrS",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "BFwkGQZ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppG",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "zNsQOto",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "VZCcmLn",
+                      "OS":  "Linux",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "VfSnZQl",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "QcwlqfD",
+                      "OS":  "Linux",
+                      "App":  "AppG",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "kQIjqwx",
+                      "OS":  "Linux",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "24/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "dsxBqju",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "XyEaktf",
+                      "OS":  "Linux",
+                      "App":  "AppC",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "04/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "AeuxEvL",
+                      "OS":  "Linux",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "JwPklGp",
+                      "OS":  "Linux",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "JOhKzYI",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OnEoBat",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "19/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "lgtbCks",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "oReuPSF",
+                      "OS":  "Linux",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "MeGctbk",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "08/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "kRBbvOE",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "23/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "wivktPy",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "10/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "NiURvpy",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "10/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "imYWjoG",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "18/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "povLaIf",
+                      "OS":  "Linux",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "21/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "jokqOiH",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "20/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "DvnKCSe",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "oPaFQxD",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppI",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "05/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "HaKpCQJ",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "bQKYvfV",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "SUzocEd",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "04/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "JLZiYvE",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "ClAwIhT",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "09/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "aYxEIOu",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "RgdmNxJ",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "09/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "UTNPxdF",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "29/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "PSHmuZY",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppC",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "heiQMWv",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppZ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "oJWfpjS",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "05/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "csGVFQP",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "19/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "bMSGqiO",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "19/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "kXWEjmw",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "NIqUZdJ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "vkxtZba",
+                      "OS":  "Linux",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "kmaroHI",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "nUbkstV",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "kHTwDMu",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "inQeYaR",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "InSloXP",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "JueaNBr",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppA",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "13/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "LWSnfHB",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "ieVLhbR",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppT",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "15/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "BMFGwOK",
+                      "OS":  "Linux",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "15/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OWniIBD",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "HCPKLUk",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "30/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "rHYEBed",
+                      "OS":  "Linux",
+                      "App":  "AppY",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "uLgcKwZ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "03/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "AFHmscC",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "jIdhmGO",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppJ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "IgcfaoA",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppA",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "28/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "HjmqXMp",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "MpVhIxR",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "12/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "CUwWVND",
+                      "OS":  "Linux",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "rKYPGOX",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "AtrijqZ",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "12/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "yQemscK",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "UNPlTiD",
+                      "OS":  "Linux",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "16/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "MILBneT",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppZ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "22/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "hvNDSWB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "12/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "qkfyQAH",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "yYaSNqL",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "hOgJeFZ",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "11/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "YpiaqIf",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "wJEKhBW",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "gIHAmxV",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppD",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "ehkOVIg",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "tLAvmfg",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "hXdjzTL",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "fHLxOQY",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "tnTfFax",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "15/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "qISOAeT",
+                      "OS":  "Linux",
+                      "App":  "AppI",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "dGSfyWm",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "11/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "DEvYdZi",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "23/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "DGPJqwn",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "22/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "xrctUzM",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "IrsNiyn",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "30/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "RnUcaLV",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "boYPBgy",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppH",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "ZgRoTcL",
+                      "OS":  "Linux",
+                      "App":  "AppC",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "13/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OgabQzl",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "xEdTBXD",
+                      "OS":  "Linux",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "ajyxTBC",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppS",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "21/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "tQyeGLP",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "QshMftj",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppC",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "eBmPRKN",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "hwsZQjG",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppQ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "12/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "AVZEHjT",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppQ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "23/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "JAylTPu",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "17/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "jyFSPtJ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "IXcYhiu",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppR",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "hHiuyMF",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "svfewuR",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "LqdhGQm",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "19/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "IrPaGoN",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "08/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "YTHAqsf",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "WIQNanz",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppY",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "wpVDJEr",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "GVITAkc",
+                      "OS":  "Linux",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "yILehCB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "04/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "TjJbDsn",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "06/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "AmHYhxn",
+                      "OS":  "Linux",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "17/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "ReVckBZ",
+                      "OS":  "Linux",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "dzLFnGt",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "05/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "IqEhaoB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "26/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "xdTRfbI",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "PbrmQNf",
+                      "OS":  "Linux",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "10/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "NqWUrnM",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppO",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "02/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "QCKNhqb",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "YWeBTls",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "07/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "fBXuPpx",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "aHTmCUR",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "iqoNDIs",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "15/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "TrAMXUh",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "07/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "CrGywUB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "JdbzRIi",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "cIVmqrA",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "xzOghMJ",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppW",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "26/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "BpkITlM",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "WoNQFCU",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "EyBqbCS",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppT",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "13/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "xbRIKnF",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "05/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "HXBvOKF",
+                      "OS":  "Linux",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "28/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "pECLQVs",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppZ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "nezNEKa",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "04/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "iQOgntP",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppT",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "vGyxDRj",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "NpkDbTA",
+                      "OS":  "Linux",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "zRcspvE",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "adtpNql",
+                      "OS":  "Linux",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "jVtvBLs",
+                      "OS":  "Linux",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "02/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "kMROvCL",
+                      "OS":  "Linux",
+                      "App":  "AppA",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "OpIJayl",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "09/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OREelkI",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "hRYnfCo",
+                      "OS":  "Linux",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "MGdXcsQ",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppG",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "unXPUoL",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "05/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "KxrhGlS",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "09/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "ocxeTiA",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "JUASTow",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppO",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "VhifvXB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppD",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "CcwuYhe",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppC",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "fxaCrsA",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppD",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "kCgriEO",
+                      "OS":  "Linux",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "10/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "TmbOBko",
+                      "OS":  "Linux",
+                      "App":  "AppN",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "cjHMZJC",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "08/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "JpMzIkf",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "rfOwFdb",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppA",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "28/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "uCPTAaj",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppH",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "YlwnofA",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppZ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "cvHeQWn",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "06/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "zZaqfIO",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "lWILwSC",
+                      "OS":  "Linux",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "10/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "ianLAXe",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OFtoPHN",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "ItdaKFp",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "IGwYRFJ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "AxBbPkd",
+                      "OS":  "Linux",
+                      "App":  "AppO",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "26/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "SsVaLqZ",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "12/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "SlCOVYz",
+                      "OS":  "Linux",
+                      "App":  "AppQ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "knMdCAs",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppR",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "14/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "pTOSsEd",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppP",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "CkjgfnY",
+                      "OS":  "Linux",
+                      "App":  "AppT",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "BVdsHXj",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppG",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "ToJmqDK",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "08/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "FcWivbe",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "kYjvLQW",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "12/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "iYQbDBv",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "fEeTUGm",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "qkQsyox",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppC",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "PEjuobD",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "06/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "GKjRevu",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppZ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "FEJOKNU",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "11/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "HFuYzMl",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppI",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "sUEwQRe",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "07/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "UuYVTXD",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppI",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "QicemUd",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "06/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "vrpjMQe",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "16/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "aiFmtgD",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "BymdVKr",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "dKhWEly",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppR",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "gzwEnQp",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppT",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "30/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "licgoOT",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "24/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "xuMhktw",
+                      "OS":  "Linux",
+                      "App":  "AppC",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "dTHbKJV",
+                      "OS":  "Linux",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "JMknmPB",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "IYvblTf",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "DTLzHqs",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "nVDiSTv",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "OezUgtF",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppL",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "fvThtFr",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "nKfzQJM",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "FRIZpNC",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "28/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "ysFlTzL",
+                      "OS":  "Linux",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "tCDyALM",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "MhJjqZT",
+                      "OS":  "Linux",
+                      "App":  "AppI",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "uEBLwZN",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "hBIDMyx",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "13/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "gXMARep",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "bGqxgKv",
+                      "OS":  "Linux",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "05/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "bMRgDLc",
+                      "OS":  "Linux",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "12/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "dQtUCvM",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "16/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "zlIfAex",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "ufaUBAP",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppQ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "25/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "rfpRkAF",
+                      "OS":  "Linux",
+                      "App":  "AppQ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "09/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "TBsRcFj",
+                      "OS":  "Linux",
+                      "App":  "AppI",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "29/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "JEFQLXa",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppI",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "05/05/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "iNMYfqh",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "pbNPrfT",
+                      "OS":  "Linux",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "21/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "wCjzWkA",
+                      "OS":  "Linux",
+                      "App":  "AppO",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "06/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "UxsZerh",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppY",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "bumxfvk",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "11/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "EwRCbjk",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppW",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "14/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "tFbwWLn",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "YWmNhDI",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppP",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "iFqSLka",
+                      "OS":  "Linux",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "PGfVkIq",
+                      "OS":  "Linux",
+                      "App":  "AppG",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "VbzFcSn",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppI",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "YTWNjrs",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppH",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "jzRUebH",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "ajHKOod",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "30/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "JwYKEkG",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "KzxNhpg",
+                      "OS":  "Linux",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "01/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "qSabICj",
+                      "OS":  "Linux",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "Ezxyjaw",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "xpWrvTj",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppD",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "30/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "DUWgLyM",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppF",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "gPBKdCS",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppV",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "26/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "PFRgNWy",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "nfmoVcZ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "vdlmKkn",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "jfekSGu",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "07/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "RYXywHP",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppV",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "fixUFMH",
+                      "OS":  "Linux",
+                      "App":  "AppI",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "vopmjGN",
+                      "OS":  "Linux",
+                      "App":  "AppP",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "16/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "KmFvVRh",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "gRdzNPO",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppS",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "rBgWsaF",
+                      "OS":  "Linux",
+                      "App":  "AppR",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "WFjaGSs",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppT",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "Uyjbqle",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppY",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "lzkABRZ",
+                      "OS":  "Linux",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "SENBsfu",
+                      "OS":  "Linux",
+                      "App":  "AppA",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "14/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "wdGIjYs",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppX",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "kfvKVuw",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppP",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "03/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "vDCGKIc",
+                      "OS":  "Linux",
+                      "App":  "AppS",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "08/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "xigabBk",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppC",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "nIzkxus",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppL",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "HRxqBah",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppN",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "CxfaAvG",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppC",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "flyhHLQ",
+                      "OS":  "Linux",
+                      "App":  "AppI",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "22/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "NtWAqZE",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "11/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "HQWNMnK",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "ycwLvkr",
+                      "OS":  "Linux",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "05/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "ZTjCYPo",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppL",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "17/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "DiQmBPv",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppA",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "eBXHFcT",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppL",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "MdbJcfU",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "11/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "jswbWVN",
+                      "OS":  "Linux",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "14/04/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "TiDugOE",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppU",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "VmejXuU",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppE",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "27/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "fKeYouc",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "YUfRNhB",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "thyrUoW",
+                      "OS":  "Linux",
+                      "App":  "AppQ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "BUaRlWI",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppJ",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "uTzslnI",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppY",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "07/05/2020",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "PVaybce",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "PLHKlYI",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppM",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "04/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "TVpyAEh",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppR",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "dZGqHvD",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "06/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "emlrvIj",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppF",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "hcCFIlu",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "05/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "izYglDQ",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppW",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "eZCdhSG",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "11/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "xWyrIAv",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain3"
+                  },
+                  {
+                      "Name":  "hGQKYOq",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppM",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "QRNcxjp",
+                      "OS":  "Linux",
+                      "App":  "AppF",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "17/04/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "uBEgIbn",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppO",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "zsDakbl",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppP",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "qutmeLU",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppD",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "OXmDlpM",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppB",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "smHJRDM",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppY",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "dEPoKmH",
+                      "OS":  "Linux",
+                      "App":  "AppE",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "WOeVtuR",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "frDtEWa",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppH",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "CZzeOla",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppB",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "08/05/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "HzqKFmh",
+                      "OS":  "Linux",
+                      "App":  "AppX",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "07/04/2020",
+                      "Domain":  "Domain4"
+                  },
+                  {
+                      "Name":  "YmPErXt",
+                      "OS":  "Windows Server 2016",
+                      "App":  "AppW",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  true,
+                      "PlannedRebootTime":  "18/04/2020",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "zkScnpT",
+                      "OS":  "Linux",
+                      "App":  "AppK",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "YxNUvBS",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppU",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "07/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "qXCczMy",
+                      "OS":  "Windows Server 2019",
+                      "App":  "AppD",
+                      "PMDeployed":  false,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "",
+                      "Domain":  "Domain2"
+                  },
+                  {
+                      "Name":  "xBwNqkp",
+                      "OS":  "Windows Server 2012 R2",
+                      "App":  "AppJ",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "10/05/2020",
+                      "Domain":  "Domain1"
+                  },
+                  {
+                      "Name":  "zQaMvtX",
+                      "OS":  "Linux",
+                      "App":  "AppW",
+                      "PMDeployed":  true,
+                      "RebootPerformed":  false,
+                      "PlannedRebootTime":  "07/05/2020",
+                      "Domain":  "Domain1"
+                  }
+              ],
+  "Apps":  [
+                "AppA",
+                "AppB",
+                "AppC",
+                "AppD",
+                "AppE",
+                "AppF",
+                "AppG",
+                "AppH",
+                "AppI",
+                "AppJ",
+                "AppK",
+                "AppL",
+                "AppM",
+                "AppN",
+                "AppO",
+                "AppP",
+                "AppQ",
+                "AppR",
+                "AppS",
+                "AppT",
+                "AppU",
+                "AppV",
+                "AppW",
+                "AppX",
+                "AppY",
+                "AppZ"
+            ],
+  "Domains":  [
+                  "Domain1",
+                  "Domain2",
+                  "Domain3",
+                  "Domain4"
+              ]
 }

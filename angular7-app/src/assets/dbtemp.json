@@ -1,0 +1,50 @@
+{
+  "servers": [
+    {
+      "Name": "ServerA",
+      "OS": "Windows Sever 2019",
+      "App": "AppA",
+      "PMDeployed": true,
+      "RebootPerformed": false,
+      "PlannedRebootTime": "26-4-2020",
+      "Domain": "Domain1"
+    },
+    {
+      "Name": "ServerB",
+      "OS": "Windows Sever 2016",
+      "App": "AppB",
+      "PMDeployed": true,
+      "RebootPerformed": false,
+      "PlannedRebootTime": "28-4-2020",
+      "Domain": "Domain2"
+    },
+    {
+      "Name": "ServerC",
+      "OS": "Linux",
+      "App": "AppC",
+      "PMDeployed": true,
+      "RebootPerformed": true,
+      "PlannedRebootTime": "23-4-2020",
+      "Domain": "Domain2"
+    },
+    {
+      "Name": "ServerD",
+      "OS": "Windows Server 2012 R2",
+      "App": "AppA",
+      "PMDeployed": false,
+      "RebootPerformed": false,
+      "PlannedRebootTime": "",
+      "Domain": "Domain1"
+    }
+  ],
+  "apps": [
+    "AppA",
+    "AppB",
+    "AppC"
+  ],
+  "domains": [
+    "Domain1",
+    "Domain2",
+    "Domain3"
+  ]
+}

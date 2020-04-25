@@ -1,15 +1,31 @@
 <app-select (domainChangeEvent) ="filterByDomain($event)"></app-select>
-<table>
-  <tr>
-    <th *ngFor="let prop of keys">
-      {{prop}}
-    </th>
-  </tr>
-  <tr *ngFor="let server of servers">
-    <td *ngFor="let prop of keys" [ngStyle]="{'color':prop=='RebootPerformed'
-    && server['PMDeployed']==true ? (server[prop]==false ? 'red' : 'green') : ''}">
-      <!--<span contenteditable="true" (keyup)="changeValue(id, 'name', $event)" (blur)="updateList(id, 'name', $event)"></span>-->
-      {{server[prop]}}
-    </td>
-  </tr>
-</table>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(0)">
+    {{((statsInDomain[0]/numServersInSelectedDomain)*100).toFixed(2)}}% Done
+  </div>
+  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(1)">
+    {{((statsInDomain[1]/numServersInSelectedDomain)*100).toFixed(2)}}% Waiting for restart
+  </div>
+  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(2)">
+    {{((statsInDomain[2]/numServersInSelectedDomain)*100).toFixed(2)}}% Undeployed
+  </div>
+ </div>
+
+  <table *ngIf="selectedDomain != undefined; else chooseDomainMsg">
+    <tr>
+      <th *ngFor="let prop of keys">
+        {{prop}}
+      </th>
+    </tr>
+    <tr *ngFor="let server of servers">
+      <td *ngFor="let prop of keys" [ngStyle]="{'color':prop=='RebootPerformed'
+        ? (server[prop]==false ? 'red' : 'green') :
+        (prop=='PMDeployed' ? (server[prop]==true ? 'green' : 'red' ) : '')}">
+        <!--<span contenteditable="true" (keyup)="changeValue(id, 'name', $event)" (blur)="updateList(id, 'name', $event)"></span>-->
+        {{server[prop]}}
+      </td>
+    </tr>
+  </table>
+
+  <ng-template #chooseDomainMsg><div style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;text-align:center">Choose a domain.</div></ng-template>
