@@ -12,20 +12,34 @@ export class SearchBarComponent implements OnInit {
   myControl: FormControl;
   autoCompleteList: any[]
   data: string[];
+  selectedDomain: string;
+  selectedDomain_old: string;
   @ViewChild('autocompleteInput') autocompleteInput: ElementRef;
-  @Output() onSelectedOption = new EventEmitter();
+  //@Output() onSelectedOption = new EventEmitter();
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.myControl = new FormControl();
 
-    this.data = this.dataService.getAllServers().map(s => s.Name);
-    this.data = this.data.concat(this.dataService.getApps());
+    this.dataService.chosenDomain.subscribe(domain => {
+      this.selectedDomain_old = this.selectedDomain;
+      this.selectedDomain = domain;
+    });
+
+    this.dataService.displayServers.subscribe(servers => {
+      if (this.selectedDomain == this.selectedDomain_old) return;
+      this.selectedDomain_old = this.selectedDomain;
+      this.data = this.dataService.getApps();
+      this.data = this.data.concat(servers.map(s => s.Name));
+    });
 
     this.myControl.valueChanges.subscribe(userInput => {
       this.autoCompleteExpenseList(userInput);
     })
+
+    this.selectedDomain = '';
+    this.selectedDomain_old = '';
   }
 
   private autoCompleteExpenseList(input:string) {
@@ -45,17 +59,25 @@ export class SearchBarComponent implements OnInit {
       : this.data;
   }
 
-  filterServerList(event) : void {
-    let servers = event.source.value;
-    if (!servers) {
-      this.dataService.searchOption = []
+  filterServerList(event): void {
+    let result = "";
+    if (event.source) { //selection event
+      result = event.source.value;
     }
-    else {
+    else { //keyup event
+      result = event.target.value;
+    }
+    //if (result) {
+      //this.dataService.searchOption = result;
+      //this.onSelectedOption.emit(this.dataService.searchOption
+    this.dataService.filterAndSetDisplayServers(s => (this.isSubstring(s.Name, result) || this.isSubstring(s.App,result)) && s.Domain == this.dataService.getChosenDomain())
+     
+    //}
+    //this.focusOnPlaceInput();
+  }
 
-      this.dataService.searchOption.push(servers);
-      //this.onSelectedOption.emit(this.dataService.searchOption)
-    }
-    this.focusOnPlaceInput();
+  private isSubstring(s1: string, s2: string): boolean { //is s2 substring of s1
+    return s1.toLowerCase().substring(0, s2.length).indexOf(s2.toLowerCase()) != -1
   }
 
   focusOnPlaceInput(): void {
@@ -63,7 +85,7 @@ export class SearchBarComponent implements OnInit {
     this.autocompleteInput.nativeElement.value = '';
   }
 
-  removeOption(option) : void {
+  /*removeOption(option) : void {
 
     let index = this.dataService.searchOption.indexOf(option);
     if (index >= 0)
@@ -71,7 +93,7 @@ export class SearchBarComponent implements OnInit {
     this.focusOnPlaceInput();
 
     this.onSelectedOption.emit(this.dataService.searchOption)
-  }
+  }*/
 
 
 }

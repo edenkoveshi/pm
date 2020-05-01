@@ -6,51 +6,76 @@ import db from '../assets/db.json';
   providedIn: 'root'
 })
 export class DataService {
-  searchOption = [];
   db: any;
-  displayServers: Array<any>; //List of servers that will be DISPLAYED
-  chosenDomain: Observable<string>;
-  private domain = new BehaviorSubject("");
+  private _displayServers: BehaviorSubject<Array<any>>; //List of servers that will be DISPLAYED
+  public displayServers: Observable<Array<any>>;
+  public chosenDomain: Observable<string>;
+  private domain: BehaviorSubject<string>;
+  /*_searchResult: Observable<string>;
+  private searchOption: BehaviorSubject<string>;*/
+  //private searchResult: string;
+
 
   constructor() {
     this.db = db;
-    this.displayServers = this.db.Servers;
+    this._displayServers = new BehaviorSubject(this.db.Servers);
+    this.displayServers = this._displayServers.asObservable();
     this.sortServers();
+    this.domain = new BehaviorSubject("")
     this.chosenDomain = this.domain.asObservable();
+    /*this.searchOption = new BehaviorSubject("");
+    this._searchResult = this.searchOption.asObservable();*/
+    //this.searchResult = "";
   }
 
-  getAllServers(): Array<any> {
+  public getAllServers(): Array<any> {
     return this.db.Servers;
   }
 
-  getDisplayServers(): Array<any> {
-    return this.displayServers;
+  public getDisplayServers(): Array<any> {
+    console.log(this._displayServers.value)
+    return this._displayServers.value;
   }
 
-  filterServers(filter: (s1) => boolean): Array<any> {
+  public filterServers(filter: (s1) => boolean): Array<any> {
     return this.db.Servers.filter(filter);
   }
 
-  setDisplayServers(servers: Array<any>) : void {
-    this.displayServers = servers;
+  public filterAndSetDisplayServers(filter: (s1) => boolean) : void {
+    this.setDisplayServers(this.filterServers(filter))
+  }
+
+  public setDisplayServers(servers: Array<any>) : void {
+    this._displayServers.next(servers);
     this.sortServers();
   }
 
-  sortServers(): void {
-    this.displayServers.sort((s1, s2) => s1.App.localeCompare(s2.App));
+  private sortServers(): void {
+    this._displayServers.next(this._displayServers.value.sort((s1, s2) => s1.App.localeCompare(s2.App)));
   }
 
-  getDomains(): string[] {
+  public getDomains(): string[] {
     return this.db.Domains;
   }
 
-  setChosenDomain(domain: string): void {
-    this.domain.next(domain);
+  public getChosenDomain(): string {
+    return this.domain.value;
   }
 
-  getApps(): string[] {
+  public setChosenDomain(domain: string): void {
+    this.domain.next(domain);
+    this._displayServers.next(this.filterServers(s => {
+      return s.Domain === domain;
+    }));
+  }
+
+  public getApps(): string[] {
     return this.db.Apps;
   }
+
+  /*public setSearchResult(result: string) : void {
+    this.searchResult = result;
+  }*/
 
   
 

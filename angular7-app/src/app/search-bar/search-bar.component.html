@@ -7,13 +7,14 @@
 
     <mat-icon matChipRemove>cancel</mat-icon>
   </mat-chip>-->
-      <input #autocompleteInput type="text" placeholder="Search" style="color:white" aria-label="Number" matInput [formControl]="myControl"
-             [matAutocomplete]="auto" [matChipInputFor]="chipList">
-      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-        <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)">
+      <input #autocompleteInput *ngIf="selectedDomain != '';else autocompleteDisabled" type="text" placeholder="Search" style="color:white" aria-label="Number" matInput [formControl]="myControl"
+             [matAutocomplete]="auto" [matChipInputFor]="chipList" (keyup)="filterServerList($event)">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterServerList($event)">
           {{option}}
         </mat-option>
       </mat-autocomplete>
+      <ng-template #autocompleteDisabled>Choose a domain to search</ng-template>
     </mat-chip-list>
 
   </mat-form-field>

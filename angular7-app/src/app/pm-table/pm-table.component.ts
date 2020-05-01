@@ -17,6 +17,7 @@ export class PmTableComponent implements OnInit {
   selectedDomain: string;
   numServersInSelectedDomain: number;
   statsInDomain: number[];
+  showTable: boolean;
   
   constructor(private dataService: DataService) {
   }
@@ -24,14 +25,19 @@ export class PmTableComponent implements OnInit {
   ngOnInit() {
     //this.db = db;
     //this.dataService = new DataService();
-    this.displayServers = this.dataService.getDisplayServers();
+    this.displayServers = [];
     //this.filterServers()
     //this.sortServers();
-    this.keys = Object.keys(this.displayServers[0]);
     this.dataService.chosenDomain.subscribe(domain => {
       this.selectedDomain = domain
-      this.filterByDomain(domain);
+      this.statsInDomain = this.getServerStatistics(domain);
     });
+    this.dataService.displayServers.subscribe(servers => {
+      this.displayServers = servers;
+      if (this.displayServers.length > 0) {
+        this.keys = Object.keys(this.displayServers[0]);
+      }
+    })
     this.statsInDomain = [0, 0, 0];
     this.numServersInSelectedDomain = 1;
     //this.DataService.getResults()
@@ -63,20 +69,20 @@ export class PmTableComponent implements OnInit {
     return this.dataService.filterServers(filter);
   }*/
 
-  filterByDomain(domain:string): void {
+  /*filterByDomain(domain:string): void {
     //let domain = this.selectedDomain
     this.displayServers = this.dataService.filterServers(s => {
       return s.Domain === domain;
     });
     this.numServersInSelectedDomain = this.displayServers.length;
     this.statsInDomain = this.getServerStatistics(domain);
-
-  }
+  }*/
 
   getServerStatistics(domain: string): number[] {
     let UndeployedServers = this.dataService.filterServers(s => s.Domain == domain && !s.PMDeployed);
     let UnrebootedServers = this.dataService.filterServers(s => s.Domain == domain && s.PMDeployed && !s.RebootPerformed);
     let Finished = this.dataService.filterServers(s => s.Domain == domain && s.PMDeployed && s.RebootPerformed);
+    this.numServersInSelectedDomain = UndeployedServers.length + UnrebootedServers.length + Finished.length
     return [UndeployedServers.length, UnrebootedServers.length, Finished.length]
   }
 

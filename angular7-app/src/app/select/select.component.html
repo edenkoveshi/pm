@@ -1,4 +1,4 @@
 <select class="custom-select" (change)="changeDomain($event)">
-  <option value="" disabled>Choose Domain</option>
+  <option disabled value="">Choose Domain</option>
   <option *ngFor="let domain of dataService.getDomains()" [ngValue]="domain">{{domain}}</option>
 </select>
