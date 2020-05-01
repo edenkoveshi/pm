@@ -1,13 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\e2e\\src",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\modal",
     "\\src\\app\\navbar",
     "\\src\\app\\pm-table",
     "\\src\\app\\select",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\select\\select.component.ts",
+  "SelectedNode": "\\src\\app\\pm-table",
   "PreviewInSolutionExplorer": false
 }
