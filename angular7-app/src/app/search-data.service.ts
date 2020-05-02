@@ -1,31 +1,31 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
-import db from '../assets/db.json';
+import { Observable, BehaviorSubject, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  db: any;
+  private db: any;
   private _displayServers: BehaviorSubject<Array<any>>; //List of servers that will be DISPLAYED
   public displayServers: Observable<Array<any>>;
   public chosenDomain: Observable<string>;
   private domain: BehaviorSubject<string>;
-  /*_searchResult: Observable<string>;
-  private searchOption: BehaviorSubject<string>;*/
-  //private searchResult: string;
 
 
-  constructor() {
-    this.db = db;
+  constructor(private http: HttpClient) {
+    this.db = {Servers:[],Apps:[],Domains:[]};
+    let dbUrl = "https://raw.githubusercontent.com/edenkoveshi/pm/master/angular7-app/src/assets/db.json"
+    let tempdb = this.http.get(dbUrl, { responseType: 'json' });
+    tempdb.subscribe(db => {
+      this.db = db
+    });
     this._displayServers = new BehaviorSubject(this.db.Servers);
     this.displayServers = this._displayServers.asObservable();
     this.sortServers();
     this.domain = new BehaviorSubject("")
     this.chosenDomain = this.domain.asObservable();
-    /*this.searchOption = new BehaviorSubject("");
-    this._searchResult = this.searchOption.asObservable();*/
-    //this.searchResult = "";
   }
 
   public getAllServers(): Array<any> {
@@ -72,10 +72,6 @@ export class DataService {
   public getApps(): string[] {
     return this.db.Apps;
   }
-
-  /*public setSearchResult(result: string) : void {
-    this.searchResult = result;
-  }*/
 
   
 

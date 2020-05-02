@@ -10,6 +10,6 @@
     "\\src\\app\\select",
     "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\assets\\db.json",
+  "SelectedNode": "\\src\\app\\select\\select.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -49,9 +49,6 @@ export class SearchBarComponent implements OnInit {
 
   filterCategoryList(val: string) {
     var categoryList = []
-    /*if (typeof val != "string") {
-      return [];
-    }*/
     if (val === '' || val === null) {
       return [];
     }
@@ -67,13 +64,8 @@ export class SearchBarComponent implements OnInit {
     else { //keyup event
       result = event.target.value;
     }
-    //if (result) {
-      //this.dataService.searchOption = result;
-      //this.onSelectedOption.emit(this.dataService.searchOption
     this.dataService.filterAndSetDisplayServers(s => (this.isSubstring(s.Name, result) || this.isSubstring(s.App,result)) && s.Domain == this.dataService.getChosenDomain())
      
-    //}
-    //this.focusOnPlaceInput();
   }
 
   private isSubstring(s1: string, s2: string): boolean { //is s2 substring of s1
