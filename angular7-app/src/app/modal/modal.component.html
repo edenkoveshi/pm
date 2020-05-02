@@ -1,1 +1,15 @@
-<p>modal works!</p>
+<mat-dialog-content>
+  
+    <mat-form-field>
+        <p *ngFor="let key of keys">{{key}}:{{serverData[key]}}</p>
+        <input matInput
+                value={{serverData.Name}}>
+    </mat-form-field>
+      ....
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>

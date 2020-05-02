@@ -18,7 +18,7 @@
       {{prop}}
     </th>
   </tr>
-  <tr *ngFor="let server of displayServers">
+  <tr *ngFor="let server of displayServers" (click)="openModal($event)">
     <td *ngFor="let prop of keys" [ngStyle]="{'color':prop=='RebootPerformed'
         ? (server[prop]==false ? 'red' : 'green') :
         (prop=='PMDeployed' ? (server[prop]==true ? 'green' : 'red' ) : '')}">

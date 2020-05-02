@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalComponent } from "../modal/modal.component";
 import { DataService } from '../data.service'
+import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pm-table',
@@ -18,7 +19,7 @@ export class PmTableComponent implements OnInit {
   statsInDomain: number[];
   showTable: boolean;
   
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,private dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -32,7 +33,6 @@ export class PmTableComponent implements OnInit {
       this.statsInDomain = this.getServerStatistics(domain);
     });
     this.dataService.displayServers.subscribe(servers => {
-      console.log("Display servers changed!")
       this.displayServers = servers;
       if (this.displayServers.length > 0) {
         this.keys = Object.keys(this.displayServers[0]);
@@ -98,6 +98,34 @@ export class PmTableComponent implements OnInit {
   private sortServers(): void {
     this.displayServers.sort((s1, s2) => s1.App.localeCompare(s2.App));
   }
+
+ /*private serverClick(event):void{
+    let serverData = this.getServerDataFromClickedCell(event);
+   this.dataService.setServerClicked(serverData);
+ }*/
+
+ private getServerDataFromClickedCell(event):any{
+  //console.log(event); 
+  let tr = event.target.parentElement
+   let tdList = tr.children
+   let serverData = {}
+  for(let i=0;i<this.keys.length;i++){
+    serverData[this.keys[i]] = tdList[i].innerText
+  }
+  return serverData
+ }
+
+ public openModal(event):void {
+
+  const dialogConfig = new MatDialogConfig();
+
+  dialogConfig.disableClose = true;
+  dialogConfig.autoFocus = true;
+
+    dialogConfig.data = this.getServerDataFromClickedCell(event);
+
+  this.dialog.open(ModalComponent, dialogConfig);
+}
 
 
 }

@@ -12,6 +12,8 @@ export class DataService {
   public displayServers: Observable<Array<any>>;
   public chosenDomain: Observable<string>;
   private domain: BehaviorSubject<string>;
+  /*private _serverClicked: BehaviorSubject<any>;
+  public serverClicked: Observable<any>;*/
 
 
   constructor(private http: HttpClient) {
@@ -19,11 +21,12 @@ export class DataService {
     let dbUrl = "https://raw.githubusercontent.com/edenkoveshi/pm/master/angular7-app/src/assets/db.json"
     let tempdb = this.http.get(dbUrl, { responseType: 'json' });
     tempdb.subscribe(db => {
-      console.log("DB changed!")
       this.db = db
     });
     this._displayServers = new BehaviorSubject(this.db.Servers);
     this.displayServers = this._displayServers.asObservable();
+    /*this._serverClicked = new BehaviorSubject({});
+    this.serverClicked = this._serverClicked.asObservable();*/
     this.sortServers();
     this.domain = new BehaviorSubject("")
     this.chosenDomain = this.domain.asObservable();
@@ -73,6 +76,11 @@ export class DataService {
   public getApps(): string[] {
     return this.db.Apps;
   }
+
+  /*public setServerClicked(serverData:any):void{
+    console.log(serverData);
+    this._serverClicked.next(serverData);
+  }*/
 
   
 

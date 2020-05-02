@@ -16,8 +16,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {
   MatIconModule, MatInputModule,
   MatAutocompleteModule, MatChipsModule,
-  MatFormFieldModule
-} from '@angular/material'
+  MatFormFieldModule,
+} from '@angular/material';
+
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import {
     MatChipsModule,
     MatFormFieldModule,
     HttpClientModule,
+    MatDialogModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
