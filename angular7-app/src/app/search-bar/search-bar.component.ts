@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, EventEmitter, Output } from '@angular/core';
-import { DataService } from '../search-data.service'
+import { DataService } from '../data.service'
 import { FormControl } from '@angular/forms';
 
 @Component({

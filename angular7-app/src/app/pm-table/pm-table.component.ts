@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import db from '../../assets/db.json';
 import { ModalComponent } from "../modal/modal.component";
-import { DataService } from '../search-data.service'
+import { DataService } from '../data.service'
 
 @Component({
   selector: 'app-pm-table',
@@ -33,10 +32,12 @@ export class PmTableComponent implements OnInit {
       this.statsInDomain = this.getServerStatistics(domain);
     });
     this.dataService.displayServers.subscribe(servers => {
+      console.log("Display servers changed!")
       this.displayServers = servers;
       if (this.displayServers.length > 0) {
         this.keys = Object.keys(this.displayServers[0]);
       }
+      this.sortServers();
     })
     this.statsInDomain = [0, 0, 0];
     this.numServersInSelectedDomain = 1;
@@ -93,5 +94,10 @@ export class PmTableComponent implements OnInit {
       'background-color': colors[num]
     }
   }
+
+  private sortServers(): void {
+    this.displayServers.sort((s1, s2) => s1.App.localeCompare(s2.App));
+  }
+
 
 }

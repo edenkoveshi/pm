@@ -19,6 +19,7 @@ export class DataService {
     let dbUrl = "https://raw.githubusercontent.com/edenkoveshi/pm/master/angular7-app/src/assets/db.json"
     let tempdb = this.http.get(dbUrl, { responseType: 'json' });
     tempdb.subscribe(db => {
+      console.log("DB changed!")
       this.db = db
     });
     this._displayServers = new BehaviorSubject(this.db.Servers);

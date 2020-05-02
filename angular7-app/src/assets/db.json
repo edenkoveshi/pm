@@ -2699,7 +2699,16 @@
                       "RebootPerformed":  false,
                       "PlannedRebootTime":  "07/05/2020",
                       "Domain":  "Domain1"
-                  }
+                  },
+                  {
+                    "Name":  "JJJFF",
+                    "OS":  "Linux",
+                    "App":  "AppA",
+                    "PMDeployed":  true,
+                    "RebootPerformed":  false,
+                    "PlannedRebootTime":  "07/05/2020",
+                    "Domain":  "Domain1"
+                }
               ],
   "Apps":  [
                 "AppA",
