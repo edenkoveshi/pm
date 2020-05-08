@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { PmTableComponent } from './pm-table/pm-table.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SelectComponent } from './select/select.component';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent,NewServerModalComponent } from './modal/modal.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DataService } from './data.service'
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,11 +15,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {
   MatIconModule, MatInputModule,
-  MatAutocompleteModule, MatChipsModule,
+  MatAutocompleteModule,MatChipsModule,
   MatFormFieldModule,
 } from '@angular/material';
 
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button'
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     NavbarComponent,
     SelectComponent,
     ModalComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    NewServerModalComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +46,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     HttpClientModule,
     MatDialogModule,
+    MatButtonModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
-  entryComponents: [ModalComponent]
+  entryComponents: [ModalComponent,NewServerModalComponent]
 })
 export class AppModule { }

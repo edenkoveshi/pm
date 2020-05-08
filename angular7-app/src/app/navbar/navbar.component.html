@@ -19,9 +19,18 @@
   <div class="navbar-collapse" style="margin-left:70%">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
+        <button mat-raised-button color="warn" (click)="openModal($event)">New+</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="navbar-collapse" style="margin-left:0%">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
         <app-search-bar></app-search-bar>
       </li>
     </ul>
   </div>
+
 
 </nav>

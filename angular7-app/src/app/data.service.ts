@@ -23,6 +23,8 @@ export class DataService {
     tempdb.subscribe(db => {
       this.db = db
     });
+
+    this.http.get("https://api.shortboxed.com/comics/v1/previous",{ responseType: 'json' }).subscribe((data) => console.log(data));
     this._displayServers = new BehaviorSubject(this.db.Servers);
     this.displayServers = this._displayServers.asObservable();
     /*this._serverClicked = new BehaviorSubject({});

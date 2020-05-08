@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>New server</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Server Name</mat-label>
+    <input matInput [(ngModel)]="newServerData.Name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Operating System</mat-label>
+    <input matInput [(ngModel)]="newServerData.OS">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Application</mat-label>
+    <input matInput [(ngModel)]="newServerData.App">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Domain</mat-label>
+    <input matInput [(ngModel)]="newServerData.Domain">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="newServerData" cdkFocusInitial>Ok</button>
+</div>

@@ -9,14 +9,8 @@ import { DataService } from '../data.service'
 })
 export class ModalComponent implements OnInit {
 
-  //private form: FormGroup;
-  private serverData;
-  private keys;
-
   constructor(private dialogRef: MatDialogRef<ModalComponent>,
     @Inject(MAT_DIALOG_DATA) data) {
-      this.serverData = data;
-      this.keys = Object.keys(this.serverData);
   }
 
   ngOnInit(): void {
@@ -24,9 +18,41 @@ export class ModalComponent implements OnInit {
 
   save() {
     //this.dialogRef.close(this.form.value);
+    //this.dialogRef.close();
 }
 
 close() {
     this.dialogRef.close();
 }
+}
+
+
+@Component({
+  selector: 'app-server-modal',
+  templateUrl: './newservermodal.component.html',
+})
+export class NewServerModalComponent extends ModalComponent{
+  private newServerData = {
+    Name: "",
+    OS: "",
+    App: "",
+    PMDeployed:  false,
+    RebootPerformed:  false,
+    PlannedRebootTime:  "",
+    Domain:  ""
+  }
+
+  constructor(private dataService: DataService,private _dialogRef: MatDialogRef<ModalComponent>,
+    @Inject(MAT_DIALOG_DATA) _data){
+      super(_dialogRef,_data)
+      this._dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+        console.log(result)
+      });
+    };
+
+
+  afterClosed(result){
+    console.log(result);
+  }
 }
