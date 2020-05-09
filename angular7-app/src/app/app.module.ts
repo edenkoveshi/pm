@@ -11,6 +11,7 @@ import { SelectComponent } from './select/select.component';
 import { ModalComponent,NewServerModalComponent } from './modal/modal.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DataService } from './data.service'
+import { AuthService } from './auth.service'
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -54,7 +55,7 @@ import { MainpageComponent } from './mainpage/mainpage.component'
     MatDialogModule,
     MatButtonModule,
   ],
-  providers: [DataService],
+  providers: [DataService,AuthService],
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent,NewServerModalComponent]
 })

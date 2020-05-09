@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -11,10 +12,11 @@ export class LoginComponent implements OnInit {
   private loginForm: FormGroup;
   private loading : boolean = false;
   private submitted : boolean = false;
+  private invalidCredentials: boolean = false;
   private returnUrl: string;
 
 
-  constructor(private router: Router,private formBuilder: FormBuilder) { }
+  constructor(private router: Router,private formBuilder: FormBuilder,private authService:AuthService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -27,12 +29,16 @@ export class LoginComponent implements OnInit {
     this.submitted = true;
 
     // stop here if form is invalid
-    if (this.loginForm.invalid) {
-        return;
+    if (this.loginForm.invalid) {  
+      return;
     }
 
-    //this.loading = true;
+    this.invalidCredentials = !(this.authService.validateUser(this.creds.username.value,this.creds.password.value));
 
+    if(this.invalidCredentials) return;
+
+    this.loading = true;
+    this.authService.setCurrentUser(this.creds.username.value);
     this.router.navigate(['pmtable']);
   }
 

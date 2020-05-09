@@ -12,19 +12,19 @@ export class DataService {
   public displayServers: Observable<Array<any>>;
   public chosenDomain: Observable<string>;
   private domain: BehaviorSubject<string>;
+  private _users:BehaviorSubject<Array<any>>;
+  public users:Observable<Array<any>>;
   /*private _serverClicked: BehaviorSubject<any>;
   public serverClicked: Observable<any>;*/
 
 
   constructor(private http: HttpClient) {
-    this.db = {Servers:[],Apps:[],Domains:[]};
+    this.db = {Servers:[],Apps:[],Domains:[],Users:[]};
     let dbUrl = "https://raw.githubusercontent.com/edenkoveshi/pm/master/angular7-app/src/assets/db.json"
-    let tempdb = this.http.get(dbUrl, { responseType: 'json' });
-    tempdb.subscribe(db => {
+    this.http.get(dbUrl, { responseType: 'json' }).subscribe(db => {
       this.db = db
+      this._users.next(db.Users);
     });
-
-    this.http.get("https://api.shortboxed.com/comics/v1/previous",{ responseType: 'json' }).subscribe((data) => console.log(data));
     this._displayServers = new BehaviorSubject(this.db.Servers);
     this.displayServers = this._displayServers.asObservable();
     /*this._serverClicked = new BehaviorSubject({});
@@ -32,6 +32,9 @@ export class DataService {
     this.sortServers();
     this.domain = new BehaviorSubject("")
     this.chosenDomain = this.domain.asObservable();
+    this._users = new BehaviorSubject(this.db.Users);
+    this.users = this._users.asObservable();
+    
   }
 
   public getAllServers(): Array<any> {
@@ -78,13 +81,4 @@ export class DataService {
   public getApps(): string[] {
     return this.db.Apps;
   }
-
-  /*public setServerClicked(serverData:any):void{
-    console.log(serverData);
-    this._serverClicked.next(serverData);
-  }*/
-
-  
-
-
 }

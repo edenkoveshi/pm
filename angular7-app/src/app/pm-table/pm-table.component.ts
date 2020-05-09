@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service'
+import { AuthService } from '../auth.service'
 
 @Component({
   selector: 'app-pm-table',
@@ -17,29 +18,25 @@ export class PmTableComponent implements OnInit {
   statsInDomain: number[];
   showTable: boolean;
   
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,private authService:AuthService) {
   }
 
   ngOnInit() {
-    //this.db = db;
-    //this.dataService = new DataService();
     this.displayServers = [];
-    //this.filterServers()
-    //this.sortServers();
-    this.dataService.chosenDomain.subscribe(domain => {
-      this.selectedDomain = domain
-      this.statsInDomain = this.getServerStatistics(domain);
-    });
     this.dataService.displayServers.subscribe(servers => {
       this.displayServers = servers;
       if (this.displayServers.length > 0) {
         this.keys = Object.keys(this.displayServers[0]);
       }
+      let permittedApps = this.authService.getUserPermittedApplications(this.authService.getCurrentUser());
+      if(permittedApps != "*"){
+        this.displayServers = this.displayServers.filter(s => permittedApps.indexOf(s.App) != -1);
+      }
+      this.statsInDomain = this.getServerStatistics();
       this.sortServers();
     })
     this.statsInDomain = [0, 0, 0];
     this.numServersInSelectedDomain = 1;
-    //this.DataService.getResults()
   }
 
   updateList(id: number, property: string, event: any): void {
@@ -51,42 +48,16 @@ export class PmTableComponent implements OnInit {
     this.editField = event.target.textContent;
   }
 
-  /*sortServers(): void {
-    this.servers.sort((s1, s2) => s1.App.localeCompare(s2.App));
-  }*/
-
-  /*getServers(): Array<any> {
-    return this.dataService.getDisplayServers();
-  }*/
-
-  /*setServers(servers: Array<any>): void {
-    this.servers = servers;
-    this.sortServers();
-  }*/
-
-  /*filterServers(filter: (s1) => boolean): Array<any> {
-    return this.dataService.filterServers(filter);
-  }*/
-
-  /*filterByDomain(domain:string): void {
-    //let domain = this.selectedDomain
-    this.displayServers = this.dataService.filterServers(s => {
-      return s.Domain === domain;
-    });
-    this.numServersInSelectedDomain = this.displayServers.length;
-    this.statsInDomain = this.getServerStatistics(domain);
-  }*/
-
-  getServerStatistics(domain: string): number[] {
-    let UndeployedServers = this.dataService.filterServers(s => s.Domain == domain && !s.PMDeployed);
-    let UnrebootedServers = this.dataService.filterServers(s => s.Domain == domain && s.PMDeployed && !s.RebootPerformed);
-    let Finished = this.dataService.filterServers(s => s.Domain == domain && s.PMDeployed && s.RebootPerformed);
+  getServerStatistics(): number[] {
+    let UndeployedServers = this.displayServers.filter(s => !s.PMDeployed);
+    let UnrebootedServers = this.displayServers.filter(s => s.PMDeployed && !s.RebootPerformed);
+    let Finished = this.displayServers.filter(s => s.PMDeployed && s.RebootPerformed);
     this.numServersInSelectedDomain = UndeployedServers.length + UnrebootedServers.length + Finished.length
     return [UndeployedServers.length, UnrebootedServers.length, Finished.length]
   }
 
   getProgressBarStyle(num: number) {
-    let colors: string[] = ["#2AB025", "#EC7423", "#EC2323"];
+    let colors: string[] = ["#EC2323", "#EC7423","#2AB025"];
     return {
       'width': (this.statsInDomain[num] / this.numServersInSelectedDomain) * 100 + '%',
       'background-color': colors[num]
@@ -97,19 +68,4 @@ export class PmTableComponent implements OnInit {
     this.displayServers.sort((s1, s2) => s1.App.localeCompare(s2.App));
   }
 
- /*private serverClick(event):void{
-    let serverData = this.getServerDataFromClickedCell(event);
-   this.dataService.setServerClicked(serverData);
- }*/
-
- /*private getServerDataFromClickedCell(event):any{
-  //console.log(event); 
-  let tr = event.target.parentElement
-   let tdList = tr.children
-   let serverData = {}
-  for(let i=0;i<this.keys.length;i++){
-    serverData[this.keys[i]] = tdList[i].innerText
-  }
-  return serverData
- }*/
 }

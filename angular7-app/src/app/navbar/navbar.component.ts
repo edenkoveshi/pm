@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import { ModalComponent,NewServerModalComponent } from "../modal/modal.component";
+import { AuthService } from '../auth.service'
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ import { ModalComponent,NewServerModalComponent } from "../modal/modal.component
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,private authService:AuthService) { }
 
   ngOnInit() {
   }

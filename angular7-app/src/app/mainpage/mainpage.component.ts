@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { PmTableComponent } from '../pm-table/pm-table.component'
 import { NavbarComponent } from '../navbar/navbar.component'
 import { SelectComponent } from '../select/select.component'
+import { AuthService } from '../auth.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mainpage',
@@ -10,9 +12,12 @@ import { SelectComponent } from '../select/select.component'
 })
 export class MainpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthService,private router: Router) { }
 
   ngOnInit(): void {
+    if(this.authService.getCurrentUser() == undefined){
+      this.router.navigate(['']);
+    }
   }
 
 }

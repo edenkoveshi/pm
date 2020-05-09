@@ -16,7 +16,8 @@
     </ul>
   </div>
 
-  <div class="navbar-collapse" style="margin-left:70%">
+  <div *ngIf="authService.getUserPermittedApplications(this.authService.getCurrentUser()) == '*'"
+   class="navbar-collapse" style="margin-left:70%">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <button mat-raised-button color="warn" (click)="openModal($event)">New+</button>
@@ -24,7 +25,8 @@
     </ul>
   </div>
 
-  <div class="navbar-collapse" style="margin-left:0%">
+  <div class="navbar-collapse"
+   [ngStyle]="{'margin-left' : authService.getUserPermittedApplications(this.authService.getCurrentUser()) == '*' ? '0%' : '70%'}">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <app-search-bar></app-search-bar>

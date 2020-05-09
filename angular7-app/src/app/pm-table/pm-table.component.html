@@ -1,14 +1,14 @@
 <!--<app-select (domainChangeEvent) ="filterByDomain($event)"></app-select>-->
 
 <div class="progress">
-  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(0)">
-    {{(statsInDomain[0]/numServersInSelectedDomain) | percent }} Done
+  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(2)">
+    {{(statsInDomain[2]/numServersInSelectedDomain) | percent }} Done
   </div>
   <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(1)">
     {{(statsInDomain[1]/numServersInSelectedDomain)| percent}} Waiting for restart
   </div>
-  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(2)">
-    {{(statsInDomain[2]/numServersInSelectedDomain)| percent}} Undeployed
+  <div class="progress-bar" role="progressbar" [ngStyle]="getProgressBarStyle(0)">
+    {{(statsInDomain[0]/numServersInSelectedDomain)| percent}} Undeployed
   </div>
 </div>
 
