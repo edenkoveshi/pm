@@ -1,0 +1,36 @@
+<!--<div>
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    <button mat-raised-button (click)="login()">Login</button>
+</div>-->
+
+<h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && creds.username.errors }" />
+        <div *ngIf="submitted && creds.username.errors" class="invalid-feedback">
+            <div *ngIf="creds.username.errors.required">Username is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && creds.password.errors }" />
+        <div *ngIf="submitted && creds.password.errors" class="invalid-feedback">
+            <div *ngIf="creds.password.errors.required">Password is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button mat-raised-button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Login
+        </button>
+        <!--<a routerLink="/register" class="btn btn-link">Register</a>-->
+    </div>
+</form>

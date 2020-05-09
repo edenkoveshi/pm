@@ -2743,5 +2743,30 @@
                   "Domain2",
                   "Domain3",
                   "Domain4"
-              ]
+              ],
+    "Users": [
+        {
+            "username":"admin",
+            "password":"adminpass",
+            "permissions":[
+                {
+                    "permissionName":"NewServer"
+                },
+                {
+                    "permissionName":"ViewApplications",
+                    "permissionScope":"*"
+                }
+            ]
+        },
+        {
+            "username":"user",
+            "password":"userpass",
+            "permissions":[
+                {
+                    "permissionName":"ViewApplications",
+                    "permissionScope":["AppA","AppG","AppW"]
+                }
+            ]
+        }
+    ]
 }

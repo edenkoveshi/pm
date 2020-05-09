@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { appRoutingModule } from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,7 +21,9 @@ import {
 } from '@angular/material';
 
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
+import { MainpageComponent } from './mainpage/mainpage.component'
 
 
 @NgModule({
@@ -31,10 +34,13 @@ import {MatButtonModule} from '@angular/material/button'
     SelectComponent,
     ModalComponent,
     SearchBarComponent,
-    NewServerModalComponent
+    NewServerModalComponent,
+    LoginComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
+    appRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     NoopAnimationsModule,
